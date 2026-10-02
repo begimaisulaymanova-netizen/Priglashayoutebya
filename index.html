@@ -475,10 +475,6 @@ section {
     color: white;
 }
 
-/* =========================
-   FINAL
-========================= */
-
 .final {
     background: #050505;
     min-height: 100svh;
@@ -608,10 +604,6 @@ body.locked {
 
 <body class="locked">
 
-<!-- =========================
-     INTRO
-========================= -->
-
 <div class="intro" id="intro">
 
     <div class="envelope-wrap">
@@ -640,11 +632,6 @@ body.locked {
 
 </div>
 
-
-<!-- =========================
-     MUSIC
-========================= -->
-
 <button class="music-button" id="musicButton">
 
     <div class="music-bars">
@@ -659,20 +646,13 @@ body.locked {
     <source src="spok.mp3" type="audio/mpeg">
 </audio>
 
-
-<!-- =========================
-     MAIN
-========================= -->
-
 <main>
-
-<!-- HERO -->
 
 <section class="hero">
 
     <div class="hero-image">
 
-        <img src="photo-1.jpg" alt="Бегимай">
+        <img src="IMG_8914.jpeg" alt="Бегимай">
 
     </div>
 
@@ -702,9 +682,6 @@ body.locked {
 
 </section>
 
-
-<!-- QUOTE -->
-
 <section class="quote">
 
     <p class="quote-text reveal">
@@ -715,16 +692,13 @@ body.locked {
 
 </section>
 
-
-<!-- INVITATION -->
-
 <section class="invitation">
 
     <div class="invitation-grid">
 
         <div class="portrait reveal">
 
-            <img src="photo-3.jpg" alt="Бегимай">
+            <img src="IMG_9532.jpeg" alt="Бегимай">
 
         </div>
 
@@ -757,9 +731,6 @@ body.locked {
     </div>
 
 </section>
-
-
-<!-- DETAILS -->
 
 <section class="details">
 
@@ -805,9 +776,6 @@ body.locked {
 
 </section>
 
-
-<!-- MEMORY -->
-
 <section class="memory">
 
     <div class="section-number">
@@ -831,9 +799,6 @@ body.locked {
     </p>
 
 </section>
-
-
-<!-- PLACE -->
 
 <section class="place">
 
@@ -878,14 +843,11 @@ body.locked {
 
 </section>
 
-
-<!-- FINAL -->
-
 <section class="final">
 
     <div class="final-image reveal">
 
-        <img src="photo-2.jpg" alt="Бегимай">
+        <img src="IMG_9533.jpeg" alt="Бегимай">
 
     </div>
 
@@ -910,12 +872,7 @@ body.locked {
 
 </main>
 
-
 <script>
-
-/* =========================
-   ELEMENTS
-========================= */
 
 const intro = document.getElementById("intro");
 const envelope = document.getElementById("envelope");
@@ -923,11 +880,6 @@ const music = document.getElementById("music");
 const musicButton = document.getElementById("musicButton");
 
 let opened = false;
-
-
-/* =========================
-   OPEN INVITATION
-========================= */
 
 function openInvitation() {
 
@@ -962,17 +914,7 @@ function openInvitation() {
 
 }
 
-
-/* =========================
-   ENVELOPE CLICK
-========================= */
-
 envelope.addEventListener("click", openInvitation);
-
-
-/* =========================
-   MUSIC BUTTON
-========================= */
 
 musicButton.addEventListener("click", () => {
 
@@ -991,11 +933,6 @@ musicButton.addEventListener("click", () => {
     }
 
 });
-
-
-/* =========================
-   SCROLL REVEAL
-========================= */
 
 const observer = new IntersectionObserver(
 
@@ -1018,7 +955,6 @@ const observer = new IntersectionObserver(
     }
 
 );
-
 
 function revealVisible() {
 
